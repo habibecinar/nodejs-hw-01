@@ -1,5 +1,4 @@
 import { readContacts } from '../utils/readContacts.js';
-
 export const getAllContacts = async () => {
   try {
     const contacts = await readContacts();
@@ -9,7 +8,6 @@ export const getAllContacts = async () => {
     return [];
   }
 };
-
 // Top-level await sorununa karşı async fonksiyonla çalıştır
 const run = async () => {
   const allContacts = await getAllContacts();
